@@ -2,6 +2,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import babel from '@rollup/plugin-babel';
 import typescript from '@rollup/plugin-typescript';
 import {uglify} from 'rollup-plugin-uglify'
+import image from '@rollup/plugin-image';
 
 export default {
     input: 'src/index.ts',
@@ -11,6 +12,7 @@ export default {
     },
     plugins: [
         resolve(),
+        image(),
         typescript({ tsconfig: './tsconfig.json' }),
         babel({ babelHelpers: 'bundled' }),
         process.env.NODE_ENV === 'production' && uglify(),
