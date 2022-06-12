@@ -1,0 +1,13 @@
+{
+  "name": "matchy-matchy",
+  "version": "0.1.0",
+  "description": "Matchy-matchy generates backgrounds based on a given image",
+  "main": "dist/index.js",
+  "repository": "git@github.com:AmirAsghary/matchy-matchy",
+  "author": "Amir Asghary <itsAmirAsghary@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}
