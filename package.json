@@ -3,11 +3,42 @@
   "version": "0.1.0",
   "description": "Matchy-matchy generates backgrounds based on a given image",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "git@github.com:AmirAsghary/matchy-matchy",
   "author": "Amir Asghary <itsAmirAsghary@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "colors",
+    "match",
+    "background",
+    "image",
+    "image processing"
+  ],
   "private": false,
-  "scripts": {},
+  "scripts": {
+    "build": "rollup -c --environment NODE_ENV:production",
+    "test": "jest --coverage",
+    "lint": "eslint src/*.js src/*.jsx"
+  },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.2",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.18.2",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.2",
+    "@types/jest": "^28.1.1",
+    "babel-loader": "^8.2.5",
+    "eslint": "^4.12.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "jest": "^28.1.0",
+    "jest-junit": "^13.2.0",
+    "prop-types": "^15.6.0",
+    "rollup-plugin-uglify": "^6.0.4",
+    "ts-jest": "^28.0.4",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.2"
+  }
 }
