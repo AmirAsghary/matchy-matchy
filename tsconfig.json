@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["jest", "jest-extended"],
     "target": "ES2015",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
     "lib": ["ES2015"],                                        /* Specify a set of bundled library declaration files that describe the target runtime environment. */
     "module": "ES2015",                                /* Specify what module code is generated. */
@@ -16,6 +17,6 @@
     "strict": true,                                      /* Enable all strict type-checking options. */     /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
-  "include": ["./src/**/*.ts", "index.d.ts"],
+  "include": ["./src/**/*.ts"],
   "exclude": ["dist"]
 }
