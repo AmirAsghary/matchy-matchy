@@ -29,6 +29,7 @@
     "@rollup/plugin-image": "^2.1.1",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.2",
+    "@rollup/plugin-wasm": "^5.2.0",
     "@types/jest": "^28.1.1",
     "@types/web": "^0.0.68",
     "babel-loader": "^8.2.5",

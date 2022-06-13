@@ -3,6 +3,7 @@ import babel from '@rollup/plugin-babel';
 import typescript from '@rollup/plugin-typescript';
 import {uglify} from 'rollup-plugin-uglify'
 import image from '@rollup/plugin-image';
+import { wasm } from '@rollup/plugin-wasm';
 
 export default {
     input: 'src/index.ts',
@@ -12,6 +13,7 @@ export default {
     },
     plugins: [
         resolve(),
+        wasm(),
         image(),
         typescript({ tsconfig: './tsconfig.json' }),
         babel({ babelHelpers: 'bundled' }),
