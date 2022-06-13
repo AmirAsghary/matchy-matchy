@@ -1,5 +1,6 @@
 module.exports = {
-    testEnvironment: 'node',
+    preset: 'ts-jest',
+    testEnvironment: 'jsdom',
     reporters: ["default", "jest-junit"],
     setupFilesAfterEnv: ['<rootDir>/test/testSetup.js'],
 };

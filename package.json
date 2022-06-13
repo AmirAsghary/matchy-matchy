@@ -20,7 +20,6 @@
     "test": "jest --coverage",
     "lint": "eslint src/*.js src/*.jsx"
   },
-  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.17.10",
     "@babel/core": "^7.18.2",
@@ -36,6 +35,7 @@
     "eslint": "^4.12.1",
     "eslint-config-airbnb": "^16.1.0",
     "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.1",
     "jest-extended": "^2.0.0",
     "jest-junit": "^13.2.0",
     "prop-types": "^15.6.0",
