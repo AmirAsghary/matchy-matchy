@@ -67,3 +67,5 @@ typings/
 /deploy/configuration/local
 /dist/
 /junit.xml
+
+*.wasm
