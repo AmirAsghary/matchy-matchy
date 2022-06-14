@@ -17,6 +17,7 @@
   "private": false,
   "scripts": {
     "build": "rollup -c --environment NODE_ENV:production",
+    "wasm:build": "node ./scripts/genWasm.js",
     "test": "jest --coverage",
     "lint": "eslint src/*.js src/*.jsx"
   },
