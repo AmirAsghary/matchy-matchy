@@ -1,2 +1,2 @@
-import { toContainAllKeys } from 'jest-extended';
+const toContainAllKeys = require('jest-extended').toContainAllKeys;
 expect.extend({ toContainAllKeys });
