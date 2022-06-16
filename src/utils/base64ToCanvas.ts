@@ -7,18 +7,14 @@ function base64ToCanvas(base64Image: Base64String): Promise<HTMLCanvasElement> {
 
         const img = new Image();
         img.onload = () => {
-            console.log('wow in onload')
             canvas.width = img.width;
             canvas.height = img.height;
             ctx?.drawImage(img, 0, 0);
 
             resolve(canvas);
         }
-        console.log(img)
 
         img.src = base64Image;
-
-        console.log(img.src);
     })
 }
 
