@@ -13,7 +13,9 @@ export default {
     },
     plugins: [
         resolve(),
-        wasm(),
+        wasm({
+            sync: ['./src/utils/avgImageData/avgImageData.wasm']
+        }),
         image(),
         typescript({ tsconfig: './tsconfig.json' }),
         babel({ babelHelpers: 'bundled' }),
